@@ -11,8 +11,10 @@ const Books = () => {
             .then(data => setBooks(data));
     }, []);
     const handleAddStudy = (book) => {
-        const newAddList = [...addList, book];
-        setAddList(newAddList);
+        // const newAddList = [...addList, book];
+        // setAddList(newAddList);
+        // console.log(newAddList);
+        console.log(book);
     }
     return (
         <div className='books-container'>
