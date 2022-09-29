@@ -1,0 +1,11 @@
+.header-area {
+    display: flex;
+}
+
+.header-area img {
+    width: 150px;
+}
+
+.header-area h1 {
+    font-size: 40px;
+}

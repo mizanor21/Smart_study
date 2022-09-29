@@ -1,0 +1,65 @@
+[
+  {
+    "id": "6334f90a3101affb36a521e5",
+    "name": "Holy Quran",
+    "img": "./Books/book1.jpg",
+    "study_time": 22,
+    "description": "The Quran, also romanized Qur'an or Koran, is the central religious text of Islam, believed by Muslims to be a revelation from God. It is organized in 114 chapters, which consist of verses."
+  },
+  {
+    "id": "6334f90ad6253851a961be21",
+    "name": "Mosley Sims",
+    "img": "./Books/book2.jpg",
+    "study_time": 24,
+    "description": "male"
+  },
+  {
+    "id": "6334f90a138f2221d9b6becf",
+    "name": "Williams Weeks",
+    "img": "./Books/book3.png",
+    "study_time": 38,
+    "description": "male"
+  },
+  {
+    "id": "6334f90a54647310450b2ac1",
+    "name": "Kramer Dudley",
+    "img": "./Books/book4.jpg",
+    "study_time": 34,
+    "description": "male"
+  },
+  {
+    "id": "6334f90aa02b3cd555e2a371",
+    "name": "Cobb Barnett",
+    "img": "./Books/book5.jpg",
+    "study_time": 37,
+    "description": "male"
+  },
+  {
+    "id": "6334f90a25a612a0e50ca664",
+    "name": "Tasha Gilliam",
+    "img": "./Books/book6.jpg",
+    "study_time": 35,
+    "description": "female"
+  },
+  {
+    "id": "6334f90ae04854996beec6c2",
+    "name": "Maxine Colon",
+    "img": "./Books/book7.jpg",
+    "study_time": 29,
+    "description": "female"
+  },
+  {
+    "id": "6334f90a19fb122c0c3fa2d2",
+    "name": "Reese Harmon",
+    "img": "./Books/book8.jpg",
+    "study_time": 28,
+    "description": "male"
+  },
+  {
+    "id": "6334f90a19fb122c0c3fa2d2",
+    "name": "Reese Harmon",
+    "img": "./Books/book9.jpg",
+    "study_time": 48,
+    "description": "male"
+  }
+]
