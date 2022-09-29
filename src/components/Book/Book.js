@@ -8,7 +8,7 @@ const Book = (props) => {
             <img src={img} alt="" />
             <div className="book-info">
                 <h3>{name}</h3>
-                <p>{description}</p>
+                <p style={{ color: 'gray', fontSize: '17px' }}>{description}</p>
                 <p><small><strong>Study Time:</strong> {study_time} minutes</small></p>
             </div>
             <button onClick={() => props.handleAddStudy(props.book)} className='btn-add'>Add Study</button>
