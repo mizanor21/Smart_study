@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Books from '../Books/Books';
 import './Main.css';
 import photo from '../../mizan.png';
@@ -13,8 +15,11 @@ const Main = () => {
         localStorage.setItem('BreakTime', time);
         setBreakTime(time);
     }
-
+    const notify = () => {
+        toast("Successfully Completed!")
+    };
     return (
+
         <div className='main-container'>
             <h2>Select Reading the B<span style={{ color: '#004D88' }}>o</span><span style={{ color: 'green' }}>o</span>k</h2>
             <div className="activity-area">
@@ -76,7 +81,8 @@ const Main = () => {
                             <p style={{ color: 'gray' }}>{breakTime} minutes</p>
                         </div>
                     </div>
-                    <button className='btn-completed'>Activity Completed</button>
+                    <button onClick={notify} className='btn-completed'>Activity Completed</button>
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
         </div>
