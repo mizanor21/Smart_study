@@ -48,6 +48,23 @@ const Main = () => {
                         </div>
                     </div>
                     <h3 style={{ margin: '20px' }}>Study Time</h3>
+                    <div className="study-time">
+                        <div>
+                            <h4>Study Time</h4>
+                        </div>
+                        <div >
+                            <p style={{ color: 'gray' }}>{0} minutes</p>
+                        </div>
+                    </div>
+                    <div className="study-time">
+                        <div>
+                            <h4>Break Time</h4>
+                        </div>
+                        <div >
+                            <p style={{ color: 'gray' }}>{0} minutes</p>
+                        </div>
+                    </div>
+                    <button className='btn-completed'>Activity Completed</button>
                 </div>
             </div>
         </div>

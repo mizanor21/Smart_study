@@ -40,6 +40,16 @@
     padding: 14px 7px;
 }
 
+.main-container .activity-area .study-time {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
 .main-container .activity-area .break-time .add-btn:hover {
     background-color: green;
     color: #FFFFFF;
@@ -57,6 +67,20 @@
     border: 2px solid green;
     border-radius: 40px;
     color: #004D88;
+}
+
+.main-container .activity-area .personal-area .btn-completed {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #004D88;
+    font-size: large;
+    border: none;
+}
+
+.main-container .activity-area .personal-area .btn-completed:hover {
+    background-color: green;
 }
 
 /* Media queries added */
