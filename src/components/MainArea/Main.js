@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Books from '../Books/Books';
 import './Main.css';
 import photo from '../../mizan.png';
+import Book from '../Book/Book';
 
 const Main = () => {
     const [breakTime, setBreakTime] = useState([]);
@@ -18,13 +18,34 @@ const Main = () => {
     const notify = () => {
         toast("Successfully Completed!")
     };
+
+
+
+
+    const [books, setBooks] = useState([])
+    const [addStudyTime, setStudyTime] = useState([0])
+    let oldStudyTime = 0;
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setBooks(data));
+    }, []);
+    const handleAddStudy = (book) => {
+        const newAddStudyTime = book.study_time + oldStudyTime;
+        setStudyTime(newAddStudyTime);
+        // console.log(book.study_time);
+    }
     return (
 
         <div className='main-container'>
             <h2>Select Reading the B<span style={{ color: '#004D88' }}>o</span><span style={{ color: 'green' }}>o</span>k</h2>
             <div className="activity-area">
                 <div className="books-area">
-                    <Books></Books>
+                    <div className="books-container">
+                        {
+                            books.map(book => <Book book={book} handleAddStudy={handleAddStudy} key={book.id}></Book>)
+                        }
+                    </div>
                 </div>
                 <div className="personal-area">
                     <h1><span style={{ color: 'green' }}>Personal Info.</span></h1>
@@ -70,7 +91,7 @@ const Main = () => {
                             <h4>Study Time</h4>
                         </div>
                         <div >
-                            <p style={{ color: 'gray' }}>{0} minutes</p>
+                            <p style={{ color: 'gray' }}>{addStudyTime} minutes</p>
                         </div>
                     </div>
                     <div className="study-time">
