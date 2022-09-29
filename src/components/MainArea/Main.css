@@ -12,6 +12,54 @@
     border-radius: 10px;
 }
 
+.personal-area .personal-info {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.main-container .activity-area .physical-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.main-container .activity-area .break-time {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.main-container .activity-area .break-time .add-btn {
+    border-radius: 50%;
+    padding: 14px 7px;
+}
+
+.main-container .activity-area .break-time .add-btn:hover {
+    background-color: green;
+    color: #FFFFFF;
+}
+
+.personal-area .personal-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-container .personal-area h1 {
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 40px;
+    color: #004D88;
+}
+
+/* Media queries added */
 @media only screen and (max-width: 1800px) {
     .activity-area {
         grid-template-columns: 3fr 2fr;
