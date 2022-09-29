@@ -1,8 +1,55 @@
+.main-container h2 {
+    margin: 10px 200px;
+}
+
 .activity-area {
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
 
 .personal-area {
-    background-color: aliceblue;
+    background-color: rgba(228, 226, 226, 0.658);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1800px) {
+    .activity-area {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .main-container h2 {
+        margin: 10px 80px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .activity-area {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .main-container h2 {
+        margin: 10px 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .activity-area {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .main-container h2 {
+        margin: 10px 60px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .activity-area {
+        /* grid-template-columns: 1fr 1fr; */
+        display: block;
+
+    }
+
+    .main-container h2 {
+        margin: 10px 10px;
+    }
 }

@@ -4,8 +4,8 @@ import './Main.css';
 
 const Main = () => {
     return (
-        <div>
-            <h2>Select Read the B<span style={{ color: '#004D88' }}>o</span><span style={{ color: 'green' }}>o</span>k</h2>
+        <div className='main-container'>
+            <h2>Select Reading the B<span style={{ color: '#004D88' }}>o</span><span style={{ color: 'green' }}>o</span>k</h2>
             <div className="activity-area">
                 <div className="books-area">
                     <Books></Books>

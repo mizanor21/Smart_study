@@ -8,58 +8,58 @@
   },
   {
     "id": "6334f90ad6253851a961be21",
-    "name": "Mosley Sims",
+    "name": "Java Fundamental",
     "img": "./Books/book2.jpg",
     "study_time": 24,
-    "description": "male"
+    "description": "Java is an object Oriented Programming (OOP) language. It incorporates almost every OOP features. Object creation through object template i.e. class, data abstraction and encapsulation."
   },
   {
     "id": "6334f90a138f2221d9b6becf",
-    "name": "Williams Weeks",
+    "name": "Python Learning",
     "img": "./Books/book3.png",
     "study_time": 38,
-    "description": "male"
+    "description": "Fundamentals of Python consists of a discussion of basic building blocks of the Python programming language. Here, “Fundamentals of Python” is divided into the following categories."
   },
   {
     "id": "6334f90a54647310450b2ac1",
-    "name": "Kramer Dudley",
+    "name": "History of the Earth",
     "img": "./Books/book4.jpg",
     "study_time": 34,
-    "description": "male"
+    "description": "Some 10-12 billion years ago, quantum fluctuations in energy density interacted with interstellar dust particles about the size of particles of cigarette smoke. Thus began the formation of our galaxy and our planet Earth."
   },
   {
     "id": "6334f90aa02b3cd555e2a371",
-    "name": "Cobb Barnett",
+    "name": "What is Islam!",
     "img": "./Books/book5.jpg",
     "study_time": 37,
-    "description": "male"
+    "description": "Islam is the fastest-growing religion with over 1.9 billion followers all over the globe. By now you probably heard about Islam through the media, conversations with a friend or coworker, or perhaps you stumbled upon it while browsing through the web."
   },
   {
     "id": "6334f90a25a612a0e50ca664",
-    "name": "Tasha Gilliam",
+    "name": "Learn Node.Js",
     "img": "./Books/book6.jpg",
     "study_time": 35,
-    "description": "female"
+    "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine and executes JavaScript code outside a web browser, which was designed to build scalable network applications. "
   },
   {
     "id": "6334f90ae04854996beec6c2",
-    "name": "Maxine Colon",
+    "name": "Introduction to C++",
     "img": "./Books/book7.jpg",
     "study_time": 29,
-    "description": "female"
+    "description": "This free online C++ course for beginners will teach you the fundamentals and applications of this versatile language.This free online course will teach you the basics of the C++ programming language and how to use it to code various programs and applications."
   },
   {
     "id": "6334f90a19fb122c0c3fa2d2",
-    "name": "Reese Harmon",
+    "name": "How to learn Math",
     "img": "./Books/book8.jpg",
     "study_time": 28,
-    "description": "male"
+    "description": "How to Learn Math is a class for learners of all levels of mathematics. It combines really important information on the brain and learning with new evidence on the best ways to approach and learn math effectively. Many people have had negative experiences with math."
   },
   {
     "id": "6334f90a19fb122c0c3fa2d2",
-    "name": "Reese Harmon",
+    "name": "Explore Biology",
     "img": "./Books/book9.jpg",
     "study_time": 48,
-    "description": "male"
+    "description": "Learning biology should be mesmerizing, not just memorizing. And it should be free-of-charge. Departing from traditional college textbooks, The Explorer's Guide to Biology (XBio) presents biology as detective work and focuses on the process of science."
   }
 ]
