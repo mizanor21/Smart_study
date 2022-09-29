@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Books from '../Books/Books';
 import './Main.css';
 import photo from '../../mizan.png';
 
 const Main = () => {
+    const [breakTime, setBreakTime] = useState([]);
+    useEffect(() => {
+        const localstorageData = localStorage.getItem('BreakTime');
+        setBreakTime(localstorageData);
+    }, [])
+    const handleBreak = (time) => {
+        localStorage.setItem('BreakTime', time);
+        setBreakTime(time);
+    }
 
     return (
         <div className='main-container'>
@@ -13,7 +22,7 @@ const Main = () => {
                     <Books></Books>
                 </div>
                 <div className="personal-area">
-                    <h1>Personal Info.</h1>
+                    <h1><span style={{ color: 'green' }}>Personal Info.</span></h1>
                     <div className="personal-info">
                         <img src={photo} alt="" />
                         <div className="">
@@ -38,13 +47,16 @@ const Main = () => {
                     <h3 style={{ margin: '20px' }}>Add A Break Time</h3>
                     <div className="break-time">
                         <div>
-                            <button className="add-btn">05<sub>min</sub></button>
+                            <button onClick={() => handleBreak(5)} className="add-btn">05<sub>min</sub></button>
                         </div>
                         <div >
-                            <button className="add-btn">10<sub>min</sub></button>
+                            <button onClick={() => handleBreak(10)} className="add-btn">10<sub>min</sub></button>
                         </div>
                         <div>
-                            <button className="add-btn">15<sub>min</sub></button>
+                            <button onClick={() => handleBreak(15)} className="add-btn">15<sub>min</sub></button>
+                        </div>
+                        <div>
+                            <button onClick={() => handleBreak(30)} className="add-btn">30<sub>min</sub></button>
                         </div>
                     </div>
                     <h3 style={{ margin: '20px' }}>Study Time</h3>
@@ -61,7 +73,7 @@ const Main = () => {
                             <h4>Break Time</h4>
                         </div>
                         <div >
-                            <p style={{ color: 'gray' }}>{0} minutes</p>
+                            <p style={{ color: 'gray' }}>{breakTime} minutes</p>
                         </div>
                     </div>
                     <button className='btn-completed'>Activity Completed</button>
