@@ -32,7 +32,7 @@ const Main = () => {
     }, []);
     const handleAddStudy = (book) => {
         const newAddStudyTime = book.study_time + oldStudyTime;
-        setStudyTime(newAddStudyTime);
+        setStudyTime(+addStudyTime + newAddStudyTime);
         // console.log(book.study_time);
     }
     return (
